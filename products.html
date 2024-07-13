@@ -1,0 +1,362 @@
+<html>
+    <head>
+        <link href="image/WhatsApp Image 2024-07-12 at 15.03.26_c96c4df9.jpg" rel="icon">
+        <title> Our products </title>
+
+        <!--font-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        "
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+    <!--header-->
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">EcoHome<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="review.html">Review</a>
+        <a href="contact.html">Contact</a>
+        </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+    </div>
+</header>
+
+<!--header section ends-->
+
+<!--product section-->
+    <link href="image/WhatsApp Image 2024-07-12 at 15.03.26_c96c4df9.jpg" rel="icon">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2e7a51;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        header .icons {
+            display: flex;
+            align-items: center;
+        }
+
+        header .icons a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            position: relative;
+        }
+
+        .content {
+            padding-top: 80px; 
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+        }
+
+        .product-description {
+            font-size: 0.9em;
+            color: #666;
+            margin: 0.5em 0;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            color: #333;
+            margin: 0.5em 0;
+        }
+
+        .product-button {
+            background-color: #2e7a51;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-button:hover {
+            background-color: #41b37aa1;
+        }
+
+        .cart-icon {
+            font-size: 24px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .cart-icon .fas {
+            margin-right: 10px;
+        }
+
+        .cart-count {
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 8px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 14px;
+        }
+
+        .cart {
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        .cart h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">EcoHome<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="review.html">Review</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <a href="login.html" class="fas fa-user"></a>
+        </div>
+    </header>
+    <!-- Header section ends -->
+
+    <!-- Content section -->
+    <div class="content">
+        <div class="product-list">
+            <div class="product-card">
+                <img src="image/Bamboo Cutlery Set with Palm tree Cotton Pouch.jpg" alt="Bamboo Cutlery" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Bamboo Cutlery</h2>
+                    <p class="product-description">Non-toxic Cutlery.</p>
+                    <p class="product-price">RM 21.99</p>
+                    <button class="product-button" data-product="Bamboo Cutlery" data-price="21.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/Bamboo Toothbrush _ Kids & Adult - Adult.jpg" alt="Bamboo Toothbrush" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Bamboo Toothbrush</h2>
+                    <p class="product-description">Soft bristles ensure gentle, effective cleaning for all ages.</p>
+                    <p class="product-price">RM 10.99</p>
+                    <button class="product-button" data-product="Bamboo Toothbrush" data-price="10.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/From Anthropologie.jpg" alt="Bamboo Kitchen Cookware Set" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Bamboo Kitchen Cookware Set</h2>
+                    <p class="product-description">Sustainable and stylish, perfect for any home.</p>
+                    <p class="product-price">RM 50.99</p>
+                    <button class="product-button" data-product="Bamboo Kitchen Cookware Set" data-price="50.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/Modern Home Design Photo.jpg" alt="Bamboo Measurement Cup" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Bamboo Measurement Cup</h2>
+                    <p class="product-description">Durable and stylish, perfect for cooking and baking.</p>
+                    <p class="product-price">RM 30.99</p>
+                    <button class="product-button" data-product="Bamboo Measurement Cup" data-price="30.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/Eco-Friendly Bamboo Cotton Swabs - 200 Pieces_Box - White.jpg" alt="Bamboo Cotton Swabs" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Bamboo Cotton Swabs</h2>
+                    <p class="product-description">200 pieces - Biodegradable and gentle, perfect for personal care.</p>
+                    <p class="product-price">RM 3.90</p>
+                    <button class="product-button" data-product="Bamboo Cotton Swabs" data-price="3.90">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/Ceramic plate + Dish brush.jpg" alt="Bamboo Dish Brush" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Bamboo Dish Brush</h2>
+                    <p class="product-description">Ergonomic handle, perfect for tackling tough messes.</p>
+                    <p class="product-price">RM 9.90</p>
+                    <button class="product-button" data-product="Bamboo Dish Brush" data-price="9.90">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/woven basket.jpg" alt="Woven Basket" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Woven Basket</h2>
+                    <p class="product-description">Durable and versatile, adds a touch of natural elegance.</p>
+                    <p class="product-price">RM 20.00</p>
+                    <button class="product-button" data-product="Woven Basket" data-price="20.00">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="image/Reusable Paper Towels.jpg" alt="Reusable Paper Towels" class="product-image">
+                <div class="product-info">
+                    <h2 class="product-name">Reusable Paper Towels</h2>
+                    <p class="product-description">Absorbent, perfect for cleaning up spills.</p>
+                    <p class="product-price">RM 12.00</p>
+                    <button class="product-button" data-product="Reusable Paper Towels" data-price="12.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h3>Shopping Cart</h3>
+            <div class="cart-items"></div>
+        </div>
+    </div>
+
+    <script>
+        const cartIcon = document.querySelector('.cart-icon');
+        const cartCount = document.querySelector('.cart-count');
+        const cart = document.querySelector('.cart');
+        const cartItemsContainer = document.querySelector('.cart-items');
+        let cartItems = [];
+
+        cartIcon.addEventListener('click', () => {
+            cart.style.display = cart.style.display === 'none' || cart.style.display === '' ? 'block' : 'none';
+        });
+
+        document.querySelectorAll('.product-button').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const product = event.target.dataset.product;
+                const price = parseFloat(event.target.dataset.price);
+                addToCart(product, price);
+            });
+        });
+
+        function addToCart(product, price) {
+            const existingItem = cartItems.find(item => item.product === product);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cartItems.push({ product, price, quantity: 1 });
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            cartCount.textContent = cartItems.reduce((total, item) => total + item.quantity, 0);
+            cartItemsContainer.innerHTML = '';
+            cartItems.forEach(item => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <span>${item.product}</span>
+                    <span>${item.quantity} x RM ${item.price.toFixed(2)}</span>
+                `;
+                cartItemsContainer.appendChild(cartItem);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
